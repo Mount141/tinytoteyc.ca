@@ -6,6 +6,7 @@
   <title>Tiny Tot Early Years Centres</title>
 
   <style>
+    /* GENERAL STYLES */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -52,34 +53,60 @@
       padding: 0 20px;
     }
 
+    /* INTRO & COMMUNITY SECTIONS */
     .intro, .community {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .intro img, .community img {
-      flex: 1 1 300px;
+      width: 40%; /* smaller image size */
       border-radius: 10px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      max-width: 100%;
-      height: auto;
     }
 
     .intro-text, .community-text {
-      flex: 2 1 400px;
+      width: 55%;
     }
 
     .intro-text h2, .community-text h2 {
       color: #4c6ef5;
+      margin-top: 0;
     }
 
     .community-text ul {
       list-style: disc;
       padding-left: 20px;
+      margin-top: 10px;
     }
 
+    /* CONTACT DAYCARES */
+    .daycares {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .daycare {
+      flex: 1 1 22%; /* 4 side by side */
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .daycare h3 {
+      margin-top: 0;
+      color: #4c6ef5;
+    }
+
+    /* FOOTER */
     footer {
       background: #4c6ef5;
       color: white;
@@ -88,9 +115,21 @@
       margin-top: 60px;
     }
 
-    @media (max-width: 800px) {
-      .intro, .community {
-        flex-direction: column;
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+      .intro img, .community img,
+      .intro-text, .community-text {
+        width: 100%;
+      }
+
+      .daycare {
+        flex: 1 1 45%; /* 2 per row */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .daycare {
+        flex: 1 1 100%; /* stacked */
       }
     }
   </style>
@@ -98,7 +137,7 @@
 
 <body>
 
-  <!-- HEADER WITH LOGO -->
+  <!-- HEADER -->
   <header>
     <div class="header-container">
       <img src="Tiny-Tots-1.png" alt="Tiny Tot Logo" class="logo">
@@ -148,6 +187,37 @@
     </div>
   </section>
 
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Our Daycare Centres</h2>
+    <div class="daycares">
+      <div class="daycare">
+        <h3>Downtown Centre</h3>
+        <p>123 Main Street, City, Province</p>
+        <p>Phone: 902-111-1111</p>
+        <p>Email: downtown@tinytot.ca</p>
+      </div>
+      <div class="daycare">
+        <h3>Northside Centre</h3>
+        <p>456 North Avenue, City, Province</p>
+        <p>Phone: 902-222-2222</p>
+        <p>Email: northside@tinytot.ca</p>
+      </div>
+      <div class="daycare">
+        <h3>Eastside Centre</h3>
+        <p>789 East Road, City, Province</p>
+        <p>Phone: 902-333-3333</p>
+        <p>Email: eastside@tinytot.ca</p>
+      </div>
+      <div class="daycare">
+        <h3>Westside Centre</h3>
+        <p>101 West Street, City, Province</p>
+        <p>Phone: 902-444-4444</p>
+        <p>Email: westside@tinytot.ca</p>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     <p>© 2026 Tiny Tot Early Years Centres. All Rights Reserved.</p>
@@ -155,4 +225,3 @@
 
 </body>
 </html>
-
