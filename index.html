@@ -22,27 +22,27 @@
     /* HEADER */
     header {
       background: #4c6ef5;
-      padding: 40px 20px 20px 20px;
       color: white;
       text-align: center;
-    }
-
-    .header-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 40px 20px 20px 20px;
     }
 
     .logo {
-      height: 120px; /* bigger logo */
+      height: 120px;
       width: auto;
     }
 
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+    }
+
     .tagline {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: normal;
-      margin-top: 15px;
-      color: #ffffff;
+      margin-top: 10px;
+      line-height: 1.4;
     }
 
     /* NAVIGATION */
@@ -71,8 +71,194 @@
       margin: 40px auto;
       padding: 0 20px;
     }
-}
 
+    /* INTRO & COMMUNITY SIDE BY SIDE */
+    .intro-community {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .intro-community img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    /* ABOUT US */
+    .about-us h2 {
+      color: #4c6ef5;
+    }
+
+    .about-us p {
+      margin-bottom: 15px;
+    }
+
+    /* PROGRAMS */
+    .programs, .services {
+      margin-bottom: 40px;
+    }
+
+    .programs h2, .services h2,
+    .programs h3, .services h3 {
+      color: #4c6ef5;
+      margin-top: 0;
+    }
+
+    .programs p, .services p {
+      margin-bottom: 12px;
+    }
+
+    /* SERVICES SPECIFIC */
+    .service {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .service h4 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .service-features ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* EDUCATORS */
+    .educators h2 {
+      color: #4c6ef5;
+      margin-bottom: 20px;
+    }
+
+    .educator {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+
+    .educator img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .educator-info {
+      flex: 1;
+    }
+
+    .educator-info h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    /* CONTACT DAYCARES */
+    .daycares {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .daycare {
+      flex: 1 1 22%;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .daycare h3 {
+      margin-top: 0;
+      color: #4c6ef5;
+    }
+
+    .daycare a {
+      color: #4c6ef5;
+      text-decoration: none;
+    }
+
+    .daycare a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #4c6ef5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+      .intro-community img {
+        width: 100%;
+      }
+
+      .educator {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .educator img {
+        width: 80%;
+      }
+
+      .educator-info {
+        text-align: center;
+      }
+
+      .daycare {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .daycare {
+        flex: 1 1 100%;
+      }
+      .service {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="Tiny-Tots-1.png" alt="Tiny Tot Logo" class="logo" loading="lazy">
+    <div class="title">Tiny Tot Early Years Centres</div>
+    <div class="tagline">Stimulate and Expand Your Child’s Learning</div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about-us">About Us</a>
+    <a href="#programs">Programs</a>
+    <a href="#services">Our Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
     /* INTRO & COMMUNITY SECTIONS */
     .intro, .community {
       display: flex;
