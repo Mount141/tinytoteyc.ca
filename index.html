@@ -19,33 +19,24 @@
       line-height: 1.6;
     }
 
-    /* HEADER */
     header {
       background: #4c6ef5;
+      padding: 20px;
       color: white;
-      text-align: center;
-      padding: 40px 20px 20px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      max-width: 1100px;
+      margin: auto;
     }
 
     .logo {
-      height: 120px;
-      width: auto;
+      height: 60px;
     }
 
-    .title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 20px 0 10px 0;
-    }
-
-    .tagline {
-      font-size: 1.3rem;
-      font-weight: normal;
-      margin-top: 10px;
-      line-height: 1.4;
-    }
-
-    /* NAVIGATION */
     nav {
       text-align: center;
       background: #ffffff;
@@ -65,28 +56,42 @@
       color: #3751f2;
     }
 
-    /* SECTIONS */
     section {
       max-width: 1100px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    /* INTRO & COMMUNITY SIDE BY SIDE */
-    .intro-community {
+    /* INTRO & COMMUNITY SECTIONS */
+    .intro, .community {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      justify-content: center;
+      align-items: flex-start;
     }
 
-    .intro-community img {
-      width: 48%;
+    .intro img, .community img {
+      width: 40%;
       border-radius: 10px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
-    /* ABOUT US */
+    .intro-text, .community-text {
+      width: 55%;
+    }
+
+    .intro-text h2, .community-text h2 {
+      color: #4c6ef5;
+      margin-top: 0;
+    }
+
+    .community-text ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* ABOUT US SECTION */
     .about-us h2 {
       color: #4c6ef5;
     }
@@ -95,7 +100,7 @@
       margin-bottom: 15px;
     }
 
-    /* PROGRAMS */
+    /* PROGRAMS SECTION */
     .programs, .services {
       margin-bottom: 40px;
     }
@@ -130,7 +135,7 @@
       margin-top: 10px;
     }
 
-    /* EDUCATORS */
+    /* EDUCATORS SECTION */
     .educators h2 {
       color: #4c6ef5;
       margin-bottom: 20px;
@@ -208,16 +213,14 @@
 
     /* RESPONSIVE */
     @media (max-width: 1000px) {
-      .intro-community img {
-        width: 100%;
-      }
-
+      .intro img, .community img,
+      .intro-text, .community-text,
       .educator {
         flex-direction: column;
         align-items: center;
       }
 
-      .educator img {
+      .intro img, .community img, .educator img {
         width: 80%;
       }
 
@@ -245,9 +248,10 @@
 
   <!-- HEADER -->
   <header>
-    <img src="Tiny-Tots-1.png" alt="Tiny Tot Logo" class="logo" loading="lazy">
-    <div class="title">Tiny Tot Early Years Centres</div>
-    <div class="tagline">Stimulate and Expand Your Child’s Learning</div>
+    <div class="header-container">
+      <img src="Tiny-Tots-1.png" alt="Tiny Tot Logo" class="logo" loading="lazy">
+      <h1>Tiny Tot Early Years Centres</h1>
+    </div>
   </header>
 
   <!-- NAVIGATION -->
