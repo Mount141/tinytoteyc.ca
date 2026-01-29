@@ -19,24 +19,33 @@
       line-height: 1.6;
     }
 
+    /* HEADER */
     header {
       background: #4c6ef5;
-      padding: 20px;
+      padding: 40px 20px 20px 20px;
       color: white;
+      text-align: center;
     }
 
     .header-container {
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 15px;
-      max-width: 1100px;
-      margin: auto;
     }
 
     .logo {
-      height: 80px;
+      height: 120px; /* bigger logo */
+      width: auto;
     }
 
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-top: 15px;
+      color: #ffffff;
+    }
+
+    /* NAVIGATION */
     nav {
       text-align: center;
       background: #ffffff;
@@ -56,11 +65,13 @@
       color: #3751f2;
     }
 
+    /* SECTIONS */
     section {
       max-width: 1100px;
       margin: 40px auto;
       padding: 0 20px;
     }
+}
 
     /* INTRO & COMMUNITY SECTIONS */
     .intro, .community {
