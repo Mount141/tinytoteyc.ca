@@ -90,6 +90,16 @@
       margin-bottom: 15px;
     }
 
+    /* PROGRAMS SECTION */
+    .programs h2 {
+      color: #4c6ef5;
+      margin-bottom: 20px;
+    }
+
+    .programs p {
+      margin-bottom: 12px;
+    }
+
     /* EDUCATORS SECTION */
     .educators h2 {
       color: #4c6ef5;
@@ -97,14 +107,29 @@
     }
 
     .educator {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
       background: #fff;
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       margin-bottom: 20px;
+      align-items: flex-start;
     }
 
-    .educator h3 {
+    .educator img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .educator-info {
+      flex: 1;
+    }
+
+    .educator-info h3 {
       margin-top: 0;
       color: #333;
     }
@@ -145,8 +170,18 @@
     /* RESPONSIVE */
     @media (max-width: 1000px) {
       .intro img, .community img,
-      .intro-text, .community-text {
-        width: 100%;
+      .intro-text, .community-text,
+      .educator {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .intro img, .community img, .educator img {
+        width: 80%;
+      }
+
+      .educator-info {
+        text-align: center;
       }
 
       .daycare {
@@ -219,8 +254,6 @@
   <section id="about-us" class="about-us">
     <h2>About Us</h2>
     <h3>Meet Our Charlottetown & Summerside Certified Childhood Educators</h3>
-    <p><strong>Welcome!</strong></p>
-    <p><strong>Our Story</strong></p>
     <p>
       Tiny Tot Early Years Centres offer child care at four separate locations. The Tiny Tot Kensington Road centre has been licensed since 1972, Rainbow has been licensed since 2003, Tiny Tot Pope Ave has been licensed since 2006 and Playtime has been licensed since 1980.
     </p>
@@ -233,16 +266,16 @@
     <p>
       Transportation for field trips and community activities are provided by our centres. With fully certified educators on staff, all programs are designed specifically for age-appropriate development.
     </p>
-    <h3>Our Team</h3>
-    <p>
-      Tiny Tot / Rainbow Early Years Centres are proud to have Directors with many years of experience in child care, education and leadership training.
-    </p>
-    <p>
-      Our Educators have diplomas/certificates in Early Childhood Education and/or Human services. All staff are required to have First Aid and CPR, WHMIS, Food Sanitation Courses, also require Vulnerable Criminal Checks. Each location is equipped with an AED machine.
-    </p>
-    <p>
-      Our qualified staff have many years of experience and continue to enhance their professional development with ongoing training sessions throughout the year to provide the safest and developmentally appropriate practices for all children.
-    </p>
+  </section>
+
+  <!-- PROGRAMS SECTION -->
+  <section id="programs" class="programs">
+    <h2>Our Programs</h2>
+    <p><strong>Infants:</strong> Gentle care, stimulation, and nurturing in a safe environment.</p>
+    <p><strong>Toddlers:</strong> Exploration and development through play-based learning and socialization.</p>
+    <p><strong>Preschool / Pre-K:</strong> Early literacy, numeracy, and emotional development.</p>
+    <p><strong>Nutrition & Health:</strong> Healthy meals, snacks, and education about food and wellness.</p>
+    <p><strong>Field Trips & Activities:</strong> Music, dance, arts & crafts, and community excursions to enhance learning.</p>
   </section>
 
   <!-- EDUCATORS -->
@@ -250,39 +283,44 @@
     <h2>Meet Our Directors & Team</h2>
 
     <div class="educator">
-      <h3>Christa Flood – Director of Finance and Operations</h3>
-      <p>
-        Hi, my name is Christa Flood, and I have been doing finance, administration and management roles for 25 years...
-      </p>
-      <p>Email: accounting@tinytoteyc.ca</p>
+      <img src="Christa.png" alt="Christa Flood">
+      <div class="educator-info">
+        <h3>Christa Flood – Director of Finance and Operations</h3>
+        <p>Hi, my name is Christa Flood, and I have been doing finance, administration and management roles for 25 years...</p>
+        <p>Email: accounting@tinytoteyc.ca</p>
+      </div>
     </div>
 
     <div class="educator">
-      <h3>Pam Barrett – Director of Tiny Tot Early Years (Kensington Road)</h3>
-      <p>
-        Hi, My name is Pam Barrett and I have been in the Early Childhood field for 35 years...
-      </p>
+      <img src="Pam.png" alt="Pam Barrett">
+      <div class="educator-info">
+        <h3>Pam Barrett – Director of Tiny Tot Early Years (Kensington Road)</h3>
+        <p>Hi, My name is Pam Barrett and I have been in the Early Childhood field for 35 years...</p>
+      </div>
     </div>
 
     <div class="educator">
-      <h3>Jacenta Clark – Director of Tiny Tot Early Years (Pope Avenue)</h3>
-      <p>
-        My name is Jacenta Clark, and I am from Vernon River Prince Edward Island...
-      </p>
+      <img src="Jacenta.png" alt="Jacenta Clark">
+      <div class="educator-info">
+        <h3>Jacenta Clark – Director of Tiny Tot Early Years (Pope Avenue)</h3>
+        <p>My name is Jacenta Clark, and I am from Vernon River Prince Edward Island...</p>
+      </div>
     </div>
 
     <div class="educator">
-      <h3>Georgia Driscoll – Director of Rainbow Early Years (Summerside)</h3>
-      <p>
-        I’m Georgia Driscoll and I’m the Director at Rainbow Early Years...
-      </p>
+      <img src="Georgia.png" alt="Georgia Driscoll">
+      <div class="educator-info">
+        <h3>Georgia Driscoll – Director of Rainbow Early Years (Summerside)</h3>
+        <p>I’m Georgia Driscoll and I’m the Director at Rainbow Early Years...</p>
+      </div>
     </div>
 
     <div class="educator">
-      <h3>Dorraine Arsenault – Director of The Mount Playtime Daycare Centre</h3>
-      <p>
-        My name is Dorraine Arsenault. I have been the Director of The Mount Playtime Daycare Centre for just over five years...
-      </p>
+      <img src="Dorraine.png" alt="Dorraine Arsenault">
+      <div class="educator-info">
+        <h3>Dorraine Arsenault – Director of The Mount Playtime Daycare Centre</h3>
+        <p>My name is Dorraine Arsenault. I have been the Director of The Mount Playtime Daycare Centre for just over five years...</p>
+      </div>
     </div>
 
   </section>
