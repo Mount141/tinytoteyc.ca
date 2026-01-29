@@ -305,18 +305,16 @@
       width: 100%;
       max-width: 900px;
       height: 400px;
-      margin: auto;
+      margin: 20px auto;
       overflow: hidden;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      background: #000;
     }
 
     /* Slides wrapper */
     .slides {
       display: flex;
-      width: calc(100% * 8);
-      animation: slide 45s infinite;
+      width: calc(100% * 16);
+      animation: scroll 32s linear infinite;
     }
 
     /* Images */
@@ -327,22 +325,15 @@
     }
 
     /* Auto slide animation */
-    @keyframes slide {
-      0%   { transform: translateX(0%); }
-      12.5%{ transform: translateX(-100%); }
-      25%  { transform: translateX(-200%); }
-      37.5%{ transform: translateX(-300%); }
-      50%  { transform: translateX(-400%); }
-      62.5%{ transform: translateX(-500%); }
-      75%  { transform: translateX(-600%); }
-      87.5%{ transform: translateX(-700%); }
-      100% { transform: translateX(0%); }
-    }
+    @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* move half width (8 images) */
+}
 
-    /* Pause animation on hover */
-    .slider:hover .slides {
-      animation-play-state: paused;
-    }
+/* Pause on hover */
+.slider:hover .slides {
+  animation-play-state: paused;
+}
   </style>
 </head>
 
@@ -477,17 +468,29 @@
 <section id="gallery">
   <h2 style="text-align:center;">Our Gallery</h2>
 
-   <div class="slider">
-    <div class="slides">
-    <img src="g1.jpg" alt="Gallery Image 1">
-    <img src="g2.jpg" alt="Gallery Image 2">
-    <img src="g3.jpg" alt="Gallery Image 3">
-    <img src="g4.jpg" alt="Gallery Image 4">
-    <img src="g5.jpg" alt="Gallery Image 5">
-    <img src="g6.jpg" alt="Gallery Image 6">
-    <img src="g7.jpg" alt="Gallery Image 7">
-    <img src="g8.jpg" alt="Gallery Image 8">
+  <div class="slider">
+  <div class="slides">
+    <img src="g1.jpg" alt="">
+    <img src="g2.jpg" alt="">
+    <img src="g3.jpg" alt="">
+    <img src="g4.jpg" alt="">
+    <img src="g5.jpg" alt="">
+    <img src="g6.jpg" alt="">
+    <img src="g7.jpg" alt="">
+    <img src="g8.jpg" alt="">
+    
+    <!-- duplicate for smooth loop -->
+    <img src="g1.jpg" alt="">
+    <img src="g2.jpg" alt="">
+    <img src="g3.jpg" alt="">
+    <img src="g4.jpg" alt="">
+    <img src="g5.jpg" alt="">
+    <img src="g6.jpg" alt="">
+    <img src="g7.jpg" alt="">
+    <img src="g8.jpg" alt="">
   </div>
+</div>
+
 </section>
 
   <!-- EDUCATORS -->
