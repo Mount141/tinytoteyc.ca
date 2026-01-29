@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TINY TOT </title>
-  <title>EARLY YEARS CENTRE </title>
-  <meta name="description" content="Tiny Tot Early Years Centres - Stimulate and Expand Your Child’s Learning" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiny Tot Early Years Centres</title>
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: #f7f8fa;
-      color: #333;
-    }
-    header {
-      background: #4c6ef5;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header {
+      background: #4c6ef5;
+      padding: 20px;
+      color: white;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .logo {
+      height: 60px;
     }
 
     nav {
-      background: #fff;
-      border-bottom: 1px solid #ddd;
       text-align: center;
-      padding: 10px 0;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
     }
 
     nav a {
@@ -42,17 +45,22 @@
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    h2 {
-      color: #4c6ef5;
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    .program-list li {
-      margin: 5px 0;
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     footer {
@@ -60,82 +68,74 @@
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- HEADER WITH LOGO -->
   <header>
-    <h1>Tiny Tot Early Years Centres</h1>
-    <p>Nurturing inclusive child care for infants to pre-kindergarten in Prince Edward Island</p>
+    <div class="header-container">
+      <img src="Tiny-Tots-1.png" alt="Tiny Tot Logo" class="logo">
+      <h1>Tiny Tot Early Years Centres</h1>
+    </div>
   </header>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="#about">About</a>
     <a href="#programs">Programs</a>
-    <a href="#services">Services</a>
-    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Us</h2>
     <p>
-      Tiny Tot Early Years Centres provide child care and early learning for children from infancy through pre-kindergarten.
-      With four locations in Charlottetown and Summerside, PE, we focus on communication with families, community activities,
-      and a nurturing environment for growth and exploration.
+      Tiny Tot Early Years Centres provide safe, inclusive, and nurturing child care
+      for infants through pre-kindergarten. Our focus is learning through play,
+      community involvement, and strong family communication.
     </p>
   </section>
 
+  <!-- PROGRAMS -->
   <section id="programs">
-    <h2>Age-Based Programs</h2>
-    <ul class="program-list">
+    <h2>Our Programs</h2>
+    <ul>
       <li>Infants</li>
       <li>Toddlers</li>
       <li>Preschool</li>
       <li>Pre-Kindergarten</li>
     </ul>
-    <p>Programs are designed to support learning, development, social skills, and independence. :contentReference[oaicite:1]{index=1}</p>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <p>We offer a range of early years services, including:</p>
-    <ul>
-      <li>Play-based learning activities</li>
-      <li>Healthy meals aligned with Canada’s Food Guide</li>
-      <li>Community field trips & outdoor play</li>
-      <li>Parent-educator communication and events</li>
-    </ul>
-    <p>Educators are certified in Early Childhood Education and regularly trained in safety and development</p>
+  <!-- IMAGE GALLERY -->
+  <section id="gallery">
+    <h2>Our Centres & Activities</h2>
+    <div class="image-grid">
+      <img src="Tinytot 2.jpg" alt="Kids playing">
+      <img src="Tinytot 3.jpg" alt="Nutrition / Food">
+    </div>
   </section>
 
-  <section id="testimonials">
-    <h2>What Families Say</h2>
-    <p>
-      Parents appreciate the nurturing environment, individualized attention, and positive experiences their children have at Tiny Tot Centres.
-  </section>
-
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact & Locations</h2>
-    <p>
-      We have four centres in Prince Edward Island including:
-    </p>
-    <ul>
-      <li>195 Kensington Rd, Charlottetown, PE (Main) – Phone: 902-892-7525 </li>
-      <li>55 Pope Ave, Charlottetown, PE – Phone: 902-628-6050 </li>
-      <li>Rainbow Early Years Centre, Summerside, PE – Phone: 902-436-2824 </li>
-      <li>Playtime Daycare, Charlottetown, PE – Phone: 902-368-3874 </li>
-    </ul>
-    <p>Hours: Monday – Friday, 6:30 AM to 5:30 PM; Playtime: 7:30 AM – 5:30 PM. Methods of payment: E-Transfer / Auto withdrawal.</p>
+    <h2>Contact Us</h2>
+    <p>Email: info@tinytotearlyyearscentres.ca</p>
+    <p>Phone: 902-892-7525</p>
+    <p>Hours: Monday – Friday, 6:30 AM – 5:30 PM</p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Tiny Tot Early Years Centres | All Rights Reserved</p>
+    <p>© 2026 Tiny Tot Early Years Centres. All Rights Reserved.</p>
   </footer>
 
 </body>
 </html>
+
 
   
