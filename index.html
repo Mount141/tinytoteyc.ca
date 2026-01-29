@@ -71,6 +71,40 @@
       margin: 40px auto;
       padding: 0 20px;
     }
+
+    .intro-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-images img {
+  width: 48%;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;          /* NO CUTTING */
+  object-fit: contain;  /* FULL IMAGE */
+  background: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
     /* INTRO & COMMUNITY SECTIONS */
     .intro, .community {
       display: flex;
@@ -177,6 +211,8 @@
       margin-top: 0;
       color: #333;
     }
+
+    
 
     /* CONTACT DAYCARES */
     .daycares {
@@ -485,90 +521,6 @@ I live in St.Catherines with my husband and my dog Cooper. I enjoy spending time
   </footer>
 
   <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Image Gallery</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
-
-    h1 {
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Slider container */
-    .slider {
-      width: 100%;
-      max-width: 900px;
-      height: 400px;
-      margin: auto;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      background: #000;
-    }
-
-    /* Slides wrapper */
-    .slides {
-      display: flex;
-      width: calc(100% * 8);
-      animation: slide 365s infinite;
-    }
-
-    /* Images */
-    .slides img {
-      width: 100%;
-      height: 1000px;
-      object-fit: cover;
-    }
-
-    /* Auto slide animation */
-    @keyframes slide {
-      0%   { transform: translateX(0%); }
-      12.5%{ transform: translateX(-100%); }
-      25%  { transform: translateX(-200%); }
-      37.5%{ transform: translateX(-300%); }
-      50%  { transform: translateX(-400%); }
-      62.5%{ transform: translateX(-500%); }
-      75%  { transform: translateX(-600%); }
-      87.5%{ transform: translateX(-700%); }
-      100% { transform: translateX(0%); }
-    }
-
-    /* Pause animation on hover */
-    .slider:hover .slides {
-      animation-play-state: paused;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>Auto Scrolling Gallery</h1>
-
-  <div class="slider">
-    <div class="slides">
-      <img src="g1.jpg" alt="Gallery Image 1">
-      <img src="g2.jpg" alt="Gallery Image 2">
-      <img src="g3.jpg" alt="Gallery Image 3">
-      <img src="g4.jpg" alt="Gallery Image 4">
-      <img src="g5.jpg" alt="Gallery Image 5">
-      <img src="g6.jpg" alt="Gallery Image 6">
-      <img src="g7.jpg" alt="Gallery Image 7">
-      <img src="g8.jpg" alt="Gallery Image 8">
-    </div>
-  </div>
-
-</body>
-</html>
-
-
 </body>
 </html>
 
