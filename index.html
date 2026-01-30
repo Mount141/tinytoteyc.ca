@@ -58,6 +58,22 @@ body::before {
   background-size: 300px 300px;
   background-repeat: repeat;
 }
+    .bg-symbols {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  place-items: center;
+  font-size: 4rem;
+  opacity: 0.18;
+}
+
+.bg-symbols span {
+  transform: rotate(-12deg);
+}
+
 
 body {
   white-space: normal;
@@ -471,6 +487,11 @@ body {
   </nav>
 
   <div class="fun-background"></div>
+<div class="bg-symbols">
+  <span>A</span><span>🧸</span><span>B</span><span>🎈</span>
+  <span>1</span><span>🚂</span><span>C</span><span>🦖</span>
+  <span>2</span><span>🍭</span><span>3</span>
+</div>
 
 
   <!-- INTRO SECTION -->
