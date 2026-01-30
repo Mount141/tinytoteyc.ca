@@ -41,17 +41,20 @@ body::before {
     );
 }
 body::before {
-  content: "A 🚂 B 🪅 C 🍭 1 🦖 2 🧸 3 🎈 ";
+  content: "A 🚂 B 🪅 C 🍭 1 🦖 2 🧸 3 🎈";
   position: fixed;
   inset: 0;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.12); /* darker */
-  line-height: 1.6;
+  color: rgba(255,255,255,0.12);
+  line-height: 2;
   pointer-events: none;
   z-index: 0;
-  white-space: pre-wrap;
+
+  background-size: 300px 300px;
+  background-repeat: repeat;
 }
+
 body {
   white-space: normal;
 }
