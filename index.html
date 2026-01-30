@@ -11,6 +11,21 @@
       scroll-behavior: smooth;
     }
 
+    /* PLAYFUL BACKGROUND LETTERS / TOYS */
+body::before {
+  content: "A B C 1 2 3 🧸🎈 A B C 1 2 3 🧸🎈";
+  position: fixed;            /* stays behind everything */
+  top: 20%;                   /* vertical position of letters */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;            /* very big letters */
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.08);  /* subtle, light opacity */
+  white-space: nowrap;
+  pointer-events: none;       /* so it doesn’t block clicks */
+  z-index: 0;                 /* behind everything */
+}
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -417,6 +432,9 @@
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <div class="fun-background"></div>
+
 
   <!-- INTRO SECTION -->
   <section id="home" class="intro">
