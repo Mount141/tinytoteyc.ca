@@ -12,19 +12,27 @@
     }
 
     /* PLAYFUL BACKGROUND LETTERS / TOYS */
+/* PLAYFUL BACKGROUND LETTERS SPREAD ALL OVER */
 body::before {
-  content: "A B C 1 🧸2 3 🎈 A B🧸 C 1🎈 2 3 🧸";
-  position: fixed;            /* stays behind everything */
-  top: 40%;                   /* vertical position of letters */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 12rem;            /* very big letters */
+  content: "A🚂 B C🪅 1🍭 2 🦖3 🧸 🎈";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 6rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.08);  /* subtle, light opacity */
-  white-space: nowrap;
-  pointer-events: none;       /* so it doesn’t block clicks */
-  z-index: 0;                 /* behind everything */
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+  z-index: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
 }
+
 
     body {
       margin: 0;
